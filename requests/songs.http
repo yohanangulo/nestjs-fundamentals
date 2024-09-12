@@ -1,0 +1,34 @@
+@api = http://localhost:3000/songs
+
+GET {{api}}
+
+###
+
+GET {{api}}/2
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+  "artists": ["test", "cielo"],
+  "releaseDate": "2024-09-11",
+  "duration": "02:40",
+  "title": "test"
+}
+
+###
+
+PUT  {{api}}/2
+
+{
+
+}
+
+###
+
+DELETE {{api}}/2
+
+
+
