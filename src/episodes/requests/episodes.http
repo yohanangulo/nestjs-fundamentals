@@ -1,10 +1,11 @@
-@api = http://localhost:3000/songs
+@api = http://localhost:3000/episodes
 
-GET {{api}}
+GET {{api}}/?limit=20
+x-api-key: 123
 
 ###
 
-GET {{api}}/2
+GET {{api}}/aoeu-aoeu
 
 ###
 
@@ -12,6 +13,8 @@ POST {{api}}
 Content-Type: application/json
 
 {
+  "name": "El nestJS",
+  "featured": true,
   "artists": ["test", "cielo"],
   "releaseDate": "2024-09-11",
   "duration": "02:40",
